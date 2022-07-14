@@ -25,6 +25,7 @@ class RockermqTestApplicationTests {
             messageDTO.setId(i);
             messageDTO.setMsg("测试"+ i);
             rocketMQTemplate.syncSend("rocketmq-demo" ,messageDTO);
+            System.out.println(i);
         }
 
     }
